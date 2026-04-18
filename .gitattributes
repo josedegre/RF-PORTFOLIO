@@ -4,3 +4,4 @@ cassegrain-reflector-potter-horn/BOCINA_ENTERA_MET_RAD_v4.zip filter=lfs diff=lf
 cassegrain-reflector-potter-horn/REFLECTOR_MAS_BOCINA_FINAL_v3.zip filter=lfs diff=lfs merge=lfs -text
 reflectarray-design/cst/ATAT_P4_B.zip filter=lfs diff=lfs merge=lfs -text
 reflectarray-design/cst/ATAT_P4_B_SIMULADO.zip filter=lfs diff=lfs merge=lfs -text
+source-reconstruction/PHASED[[:space:]]ARRAY[[:space:]]MATLAB-version_final.zip filter=lfs diff=lfs merge=lfs -text
