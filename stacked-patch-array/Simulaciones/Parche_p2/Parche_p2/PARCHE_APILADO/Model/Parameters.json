@@ -1,0 +1,50 @@
+{
+    "parameters": [
+        {
+            "expr": "18.80",
+            "name": "W_parche_inf",
+            "value": "18.80"
+        },
+        {
+            "expr": "15.28",
+            "name": "L_parche_inf",
+            "value": "15.28"
+        },
+        {
+            "expr": "1.58",
+            "name": "h_sus",
+            "value": "1.58"
+        },
+        {
+            "expr": "0.035",
+            "name": "h_cobre",
+            "value": "0.035"
+        },
+        {
+            "expr": "19.1",
+            "name": "Long_linea",
+            "value": "19.1"
+        },
+        {
+            "expr": "5.1",
+            "name": "h_0",
+            "value": "5.1"
+        },
+        {
+            "expr": "14",
+            "name": "L_parche_sup",
+            "value": "14"
+        },
+        {
+            "expr": "18.4",
+            "name": "W_parche_sup",
+            "value": "18.4"
+        },
+        {
+            "expr": "1.5",
+            "name": "W_linea",
+            "value": "1.5"
+        }
+    ],
+    "version": 1
+}

@@ -1,0 +1,36 @@
+{
+    "SENSITIVITY_ANALYSIS_USER_PARAMETER": {
+        "items": []
+    },
+    "SUPPORT_MANAGEMENT": {
+        "items": [],
+        "number_of_items": 0,
+        "version": 202001
+    },
+    "probes_positions": [
+        {
+            "id": 0,
+            "xpos": -24.83,
+            "ypos": -0.00015319148898385,
+            "zpos": 1.615
+        },
+        {
+            "id": 1,
+            "xpos": -24.83,
+            "ypos": -44.680953191489,
+            "zpos": 1.615
+        },
+        {
+            "id": 2,
+            "xpos": -24.83,
+            "ypos": -89.361753191489,
+            "zpos": 1.615
+        },
+        {
+            "id": 3,
+            "xpos": -24.83,
+            "ypos": -134.04255319149,
+            "zpos": 1.615
+        }
+    ]
+}

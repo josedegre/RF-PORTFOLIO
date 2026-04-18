@@ -1,0 +1,289 @@
+; Top Design: "atat_lib:Con lineas no ideales:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="atat_lib:Con lineas no ideales:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+model MSub1 MSUB H=1.58 mm Er=3.9 Mur=1 Cond=1.0E+50 Hu=1e+33 mm T=0.035 mm TanD=0.02 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=4.2 GHz Stop=5.2 GHz Step=0.01 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+
+L_adapt_1_parche_2C2=10.26542 notune{ 4.77664 to 14.32992 by 0.001 }
+
+Z1=100
+
+P4=P1
+
+P3=P1
+
+P2=P1
+
+P1=10**(0/10)
+
+Z_parche=40
+
+f=4.7 GHz
+MLIN2:TL142  N__22 N__81 Subst="MSub1" W=W_adapt_1_parche_2C mm L=L_adapt_1_parche_2C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+
+W_adapt_1_parche_1=3.49823 notune{ 1.52113 to 4.56339 by 0.001 }
+
+L_fase_2=9.63812 notune{ 8.26365 to 24.79095 by 0.1 }
+MSABND:Bend7  N__94 N__5 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M 
+MTEE_ADS:Tee1  N__108 N__107 N__43 Subst="MSub1" W1=W_Z1 mm W2=W_Z1 mm W3=W_adapt_1 mm 
+MLIN2:TL124  N__102 N__101 Subst="MSub1" W=W_adapt_1_parche_2C mm L=L_adapt_1_parche_2C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+
+L_adapt_1_parche_1_1=5.751 notune{ 1 to 8 by 0.01 }
+
+L_adapt_1=10.53945 notune{ 4.596575 to 10.8 by 0.001 }
+MLIN2:TL144  N__87 N__86 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+
+W_adapt_1_parche_1C2=3.25323 notune{ 1.52113 to 4.56339 by 0.01 }
+
+W_adapt_1_parche_2C2=1.42531 notune{ 0.617695 to 1.853085 by 0.01 }
+Port:TermG3  N__6 0 Num=3 Z=Z_parche Ohm Noise=yes 
+MSTEP:Step19  N__20 N__15 Subst="MSub1" W1=W_adapt_1_parche_1 mm W2=W_adapt_1_parche_2 mm 
+MLIN2:TL120  N__114 N__115 Subst="MSub1" W=W_adapt_2 mm L=L_adapt_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL146  N__82 N__3 Subst="MSub1" W=W_adapt_1C mm L=L_adapt_2C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL128  N__95 N__107 Subst="MSub1" W=W_Z1 mm L=L_fase2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+Port:TermG12  N__106 0 Num=9 Z=Z_parche Ohm Noise=yes 
+Port:TermG18  N__39 0 Num=16 Z=Z_parche Ohm Noise=yes 
+MSABND:Bend13  N__84 N__83 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M_2 
+MLIN2:TL151  N__80 N__11 Subst="MSub1" W=W_Z2 mm L=L_fase4 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSABND:Bend12  N__86 N__2 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M_1 
+MSABND:Bend11  N__8 N__3 Subst="MSub1" W=W_adapt_1C mm Angle=90 M=M_3 
+MSABND:Bend10  N__21 N__24 Subst="MSub1" W=W_adapt_1C mm Angle=90 M=M2 
+
+W_adapt_1C=2.55207 notune{ 1.52113 to 4.56339 by 0.01 }
+
+L_adapt_2_C=7.69173 notune{ 4.77664 to 10.6 by 0.01 }
+MLIN2:TL18  N__7 N__19 Subst="MSub1" W=W_adapt_1_parche_1 mm L=L_adapt_1_parche_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+Port:TermG4  N__10 0 Num=4 Z=Z1 Ohm Noise=yes 
+MLIN2:TL80  N__15 N__16 Subst="MSub1" W=W_adapt_1_parche_2 mm L=L_adapt_1_parche_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+
+L_fase2=3.579100
+MLIN2:TL108  N__45 N__97 Subst="MSub1" W=W_adapt_1_parche_2C2 mm L=L_adapt_1_parche_2C2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL109  N__90 N__103 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL105  N__92 N__88 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+Port:TermG1  N__7 0 Num=1 Z=Z_parche Ohm Noise=yes 
+Port:TermG2  N__118 0 Num=2 Z=Z1 Ohm Noise=yes 
+MLIN2:TL81  N__6 N__20 Subst="MSub1" W=W_adapt_1_parche_1 mm L=L_adapt_1_parche_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL82  N__16 N__10 Subst="MSub1" W=W_Z1 mm L=L_fase2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+Port:TermG7  N__42 0 Num=7 Z=Z_parche Ohm Noise=yes 
+MLIN2:TL110  N__97 N__89 Subst="MSub1" W=W_Z1 mm L=L_fase2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL119  N__43 N__104 Subst="MSub1" W=W_adapt_1 mm L=L_adapt_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+
+W_adapt_1_parche_2C=1.42531 notune{ 0.617695 to 1.853085 by 0.001 }
+MLIN2:TL143  N__81 N__0 Subst="MSub1" W=W_Z1 mm L=L_fase1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL138  N__117 N__26 Subst="MSub1" W=W_adapt_1_parche_2C mm L=L_adapt_1_parche_2C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL131  N__28 N__32 Subst="MSub1" W=W_Z1 mm L=L_fase2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL132  N__27 N__35 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+Port:TermG14  N__110 0 Num=12 Z=Z_parche Ohm Noise=yes 
+MLIN2:TL137  N__25 N__36 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL136  N__110 N__31 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL135  N__34 N__105 Subst="MSub1" W=W_Z2 mm L=L_fase2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL133  N__33 N__28 Subst="MSub1" W=W_adapt_1_parche_2C2 mm L=L_adapt_1_parche_2C2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL130  N__37 N__30 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL139  N__38 N__34 Subst="MSub1" W=W_adapt_2C mm L=L_adapt_2_C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+
+L_adapt_1_parche_1=8.94967 notune{ 4.596575 to 13.789725 by 0.01 }
+MLIN2:TL123  N__106 N__98 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+Port:TermG11  N__116 0 Num=11 Z=Z2 Ohm Noise=yes 
+MSTEP:Step21  N__88 N__112 Subst="MSub1" W1=W_adapt_1_parche_1C mm W2=W_adapt_1_parche_2C mm 
+MLIN2:TL127  N__5 N__96 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL126  N__111 N__95 Subst="MSub1" W=W_adapt_1_parche_2C2 mm L=L_adapt_1_parche_2C2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL107  N__42 N__44 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSABND:Bend5  N__44 N__90 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M 
+MSABND:Bend6  N__98 N__99 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M 
+MSTEP:Step27  N__96 N__111 Subst="MSub1" W1=W_adapt_1_parche_1C2 mm W2=W_adapt_1_parche_2C2 mm 
+MSABND:Bend16  N__63 N__62 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M_5 
+MSTEP:Step26  N__100 N__102 Subst="MSub1" W1=W_adapt_1_parche_1C mm W2=W_adapt_1_parche_2C mm 
+MSTEP:Step33  N__14 N__9 Subst="MSub1" W1=W_adapt_1_parche_1C2 mm W2=W_adapt_1_parche_2C2 mm 
+MSTEP:Step22  N__103 N__45 Subst="MSub1" W1=W_adapt_1_parche_1C2 mm W2=W_adapt_1_parche_2C2 mm 
+MLIN2:TL121  N__115 N__116 Subst="MSub1" W=W_Z2 mm L=L_fase_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+Port:TermG6  N__40 0 Num=6 Z=Z1 Ohm Noise=yes 
+MLIN2:TL140  N__26 N__113 Subst="MSub1" W=W_Z1 mm L=L_fase1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+Port:TermG13  N__91 0 Num=10 Z=Z_parche Ohm Noise=yes 
+Port:TermG5  N__109 0 Num=5 Z=Z_parche Ohm Noise=yes 
+MLIN2:TL141  N__23 N__24 Subst="MSub1" W=W_adapt_1C mm L=L_adapt_2C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+Port:TermG16  N__105 0 Num=14 Z=Z2 Ohm Noise=yes 
+Port:TermG15  N__37 0 Num=13 Z=Z_parche Ohm Noise=yes 
+Port:TermG17  N__87 0 Num=15 Z=Z_parche Ohm Noise=yes 
+
+L_adapt_1C=5.84 notune{ 3 to 9 by 0.01 }
+MLIN2:TL150  N__9 N__4 Subst="MSub1" W=W_adapt_1_parche_2C2 mm L=L_adapt_1_parche_2C2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSTEP:Step34  N__61 N__75 Subst="MSub1" W1=W_adapt_1C mm W2=W_adapt_2C mm 
+MSTEP:Step28  N__35 N__33 Subst="MSub1" W1=W_adapt_1_parche_1C2 mm W2=W_adapt_1_parche_2C2 mm 
+MLIN2:TL88  N__112 N__41 Subst="MSub1" W=W_adapt_1_parche_2C mm L=L_adapt_1_parche_2C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+
+W_adapt_2C=1.49335 notune{ 0.617695 to 1.853085 by 0.001 }
+MSTEP:Step32  N__12 N__22 Subst="MSub1" W1=W_adapt_1_parche_1C mm W2=W_adapt_1_parche_2C mm 
+MLIN2:TL125  N__99 N__100 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL152  N__39 N__84 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+
+L_adapt_1_parche_2=9.38942 notune{ 4.77664 to 14.32992 by 0.1 }
+MLIN2:TL122  N__101 N__108 Subst="MSub1" W=W_Z1 mm L=L_fase1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSTEP:Step29  N__23 N__38 Subst="MSub1" W1=W_adapt_1C mm W2=W_adapt_2C mm 
+
+Z2=90
+MLIN2:TL153  N__18 N__8 Subst="MSub1" W=W_adapt_1 mm L=L_adapt_1C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL147  N__13 N__80 Subst="MSub1" W=W_adapt_2C mm L=L_adapt_2_C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSABND:Bend8  N__30 N__27 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M 
+
+W_adapt_1=2.58907 notune{ 1.52113 to 4.56339 by 0.01 }
+Port:TermG8  N__89 0 Num=8 Z=Z1 Ohm Noise=yes 
+MLIN2:TL79  N__121 N__118 Subst="MSub1" W=W_Z1 mm L=L_fase1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+
+Z_union3=1.0
+
+Z_union2=1.0
+
+Z_union1=1.0
+
+W_adapt_entrada=3.79521 tune{ 1.897605 to 5.692815 by 0.01 }
+
+L_adapt_entrada=9.09377 tune{ 7.5 to 10.5 by 0.1 }
+Port:TermG21  N__57 0 Num=19 Z=Z_conector Ohm Noise=yes 
+MSTEP:Step37  N__55 N__58 Subst="MSub1" W1=W_adapt_entrada mm W2=W_adapt_entrada2 mm 
+MLIN2:TL168  N__53 N__55 Subst="MSub1" W=W_adapt_entrada mm L=L_adapt_entrada mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+
+L_conector=9.1509 tune{ 6 to 10.6 by 0.3 }
+
+W_conector=3.3442 tune{ 1.6721 to 5.0163 by 0.01 }
+
+W_adapt_entrada2=3.48746 tune{ 3.35 to 5.23119 by 0.01 }
+
+L_adapt_entrada_2=9.13202 tune{ 7.4 to 10.6 by 0.1 }
+
+L_fase3=25.579100
+MTEE_ADS:Tee5  N__11 N__73 N__53 Subst="MSub1" W1=W_Z2 mm W2=W_Z2 mm W3=W_adapt_entrada mm 
+Port:TermG20  N__78 0 Num=18 Z=Z_parche Ohm Noise=yes 
+Port:TermG19  N__66 0 Num=17 Z=Z_parche Ohm Noise=yes 
+MTEE_ADS:Tee4  N__67 N__64 N__77 Subst="MSub1" W1=W_Z1 mm W2=W_Z1 mm W3=W_adapt_1 mm 
+MSTEP:Step36  N__76 N__72 Subst="MSub1" W1=W_adapt_1_parche_1C2 mm W2=W_adapt_1_parche_2C2 mm 
+MSTEP:Step35  N__74 N__79 Subst="MSub1" W1=W_adapt_1_parche_1C mm W2=W_adapt_1_parche_2C mm 
+MLIN2:TL167  N__54 N__57 Subst="MSub1" W=W_conector mm L=L_conector mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL162  N__72 N__70 Subst="MSub1" W=W_adapt_1_parche_2C2 mm L=L_adapt_1_parche_2C2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL165  N__77 N__71 Subst="MSub1" W=W_adapt_1 mm L=L_adapt_1C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL164  N__78 N__63 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL163  N__59 N__73 Subst="MSub1" W=W_Z2 mm L=L_fase3 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL157  N__68 N__74 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL158  N__61 N__69 Subst="MSub1" W=W_adapt_1C mm L=L_adapt_2C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL159  N__75 N__59 Subst="MSub1" W=W_adapt_2C mm L=L_adapt_2_C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL160  N__70 N__64 Subst="MSub1" W=W_Z1 mm L=L_fase2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL161  N__62 N__76 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL87  N__109 N__93 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL134  N__29 N__21 Subst="MSub1" W=W_adapt_1 mm L=L_adapt_1C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSTEP:Step30  N__36 N__117 Subst="MSub1" W1=W_adapt_1_parche_1C mm W2=W_adapt_1_parche_2C mm 
+
+W_adapt_2=1.46635 notune{ 0.617695 to 1.853085 by 0.001 }
+
+W_adapt_1_parche_1C=3.42323 notune{ 1.52113 to 4.56339 by 0.001 }
+MSABND:Bend14  N__71 N__69 Subst="MSub1" W=W_adapt_1C mm Angle=90 M=M_6 
+MLIN2:TL148  N__4 N__85 Subst="MSub1" W=W_Z1 mm L=L_fase2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL149  N__83 N__14 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL78  N__119 N__121 Subst="MSub1" W=W_adapt_1_parche_2 mm L=L_adapt_1_parche_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL145  N__2 N__12 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+
+L_adapt_2=7.95173 notune{ 4.77664 to 10.6 by 0.1 }
+
+W_Z2=1.081090
+
+L_adapt_1_parche_2C=10.26542 notune{ 4.77664 to 14.32992 by 0.001 }
+MSABND:Bend15  N__65 N__68 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M_4 
+
+M=0.5 tune{ 0.3 to 0.9 by 0.01 }
+MLIN2:TL106  N__41 N__40 Subst="MSub1" W=W_Z1 mm L=L_fase1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSTEP:Step31  N__82 N__13 Subst="MSub1" W1=W_adapt_1C mm W2=W_adapt_2C mm 
+MTEE_ADS:Tee2  N__113 N__32 N__29 Subst="MSub1" W1=W_Z1 mm W2=W_Z1 mm W3=W_adapt_1 mm 
+
+L_adapt_2C=2.5 notune{ 1 to 6 by 0.01 }
+
+M2=0.5 tune{ 0.3 to 0.9 by 0.01 }
+
+W_adapt_1_parche_2=1.49231 notune{ 0.617695 to 1.853085 by 0.001 }
+MLIN2:TL156  N__66 N__65 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSABND:Bend4  N__93 N__92 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M 
+MSTEP:Step25  N__104 N__114 Subst="MSub1" W1=W_adapt_1 mm W2=W_adapt_2 mm 
+MLIN2:TL129  N__91 N__94 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL154  N__79 N__60 Subst="MSub1" W=W_adapt_1_parche_2C mm L=L_adapt_1_parche_2C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+
+L_adapt_1_parche_1_2=2.31 notune{ 1 to 10.5 by 0.01 }
+MTEE_ADS:Tee3  N__0 N__85 N__18 Subst="MSub1" W1=W_Z1 mm W2=W_Z1 mm W3=W_adapt_1 mm 
+MLIN2:TL155  N__60 N__67 Subst="MSub1" W=W_Z1 mm L=L_fase1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSABND:Bend9  N__31 N__25 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M 
+
+W_Z1=0.829201 notune{ 0.4146005 to 1.2438015 by 0.0829201 }
+
+L_fase1=1 notune{ 1 to 13.5 by 0.9 }
+MSTEP:Step18  N__19 N__119 Subst="MSub1" W1=W_adapt_1_parche_1 mm W2=W_adapt_1_parche_2 mm 
+
+Z_conector=50 notune{ 25 to 75 by 0.1 }
+MLIN2:TL166  N__58 N__54 Subst="MSub1" W=W_adapt_entrada2 mm L=L_adapt_entrada_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+
+L_fase4=21
+MSABND:Bend17  N__46 N__128 Subst="MSub1" W=W_adapt_1C mm Angle=90 M=M2 
+MSABND:Bend18  N__52 N__130 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M 
+MSABND:Bend19  N__124 N__125 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M 
+MLIN2:TL169  N__130 N__47 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL170  N__125 N__49 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL171  N__123 N__17 Subst="MSub1" W=W_Z1 mm L=L_fase2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL172  N__129 N__122 Subst="MSub1" W=W_adapt_1_parche_2C mm L=L_adapt_1_parche_2C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL173  N__126 N__52 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL174  N__120 N__128 Subst="MSub1" W=W_adapt_1C mm L=L_adapt_2C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL175  N__122 N__51 Subst="MSub1" W=W_Z1 mm L=L_fase1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL176  N__1 N__123 Subst="MSub1" W=W_adapt_1_parche_2C2 mm L=L_adapt_1_parche_2C2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL177  N__56 N__124 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL178  N__132 N__46 Subst="MSub1" W=W_adapt_1 mm L=L_adapt_1C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL179  N__50 N__127 Subst="MSub1" W=W_adapt_2C mm L=L_adapt_2_C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL180  N__127 N__131 Subst="MSub1" W=W_Z2 mm L=L_fase4 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSTEP:Step38  N__47 N__129 Subst="MSub1" W1=W_adapt_1_parche_1C mm W2=W_adapt_1_parche_2C mm 
+MSTEP:Step39  N__49 N__1 Subst="MSub1" W1=W_adapt_1_parche_1C2 mm W2=W_adapt_1_parche_2C2 mm 
+MSTEP:Step40  N__120 N__50 Subst="MSub1" W1=W_adapt_1C mm W2=W_adapt_2C mm 
+MTEE_ADS:Tee6  N__51 N__17 N__132 Subst="MSub1" W1=W_Z1 mm W2=W_Z1 mm W3=W_adapt_1 mm 
+Port:TermG22  N__131 0 Num=20 Z=Z2 Ohm Noise=yes 
+Port:TermG23  N__126 0 Num=21 Z=Z_parche Ohm Noise=yes 
+Port:TermG24  N__56 0 Num=22 Z=Z_parche Ohm Noise=yes 
+MSABND:Bend20  N__140 N__151 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M 
+MSABND:Bend21  N__147 N__146 Subst="MSub1" W=W_adapt_1_parche_1C mm Angle=90 M=M 
+MSABND:Bend22  N__145 N__138 Subst="MSub1" W=W_adapt_1C mm Angle=90 M=M2 
+MLIN2:TL181  N__151 N__144 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL182  N__149 N__148 Subst="MSub1" W=W_adapt_1_parche_2C2 mm L=L_adapt_1_parche_2C2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL183  N__133 N__147 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL184  N__148 N__142 Subst="MSub1" W=W_Z1 mm L=L_fase2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL185  N__146 N__141 Subst="MSub1" W=W_adapt_1_parche_1C2 mm L=L_adapt_1_parche_1_2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL186  N__136 N__143 Subst="MSub1" W=W_adapt_1_parche_2C mm L=L_adapt_1_parche_2C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL187  N__150 N__140 Subst="MSub1" W=W_adapt_1_parche_1C mm L=L_adapt_1_parche_1_1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL188  N__143 N__48 Subst="MSub1" W=W_Z1 mm L=L_fase1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL189  N__139 N__137 Subst="MSub1" W=W_adapt_2C mm L=L_adapt_2_C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL190  N__135 N__138 Subst="MSub1" W=W_adapt_1C mm L=L_adapt_2C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL191  N__134 N__145 Subst="MSub1" W=W_adapt_1 mm L=L_adapt_1C mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL192  N__137 N__152 Subst="MSub1" W=W_Z2 mm L=L_fase3 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSTEP:Step41  N__144 N__136 Subst="MSub1" W1=W_adapt_1_parche_1C mm W2=W_adapt_1_parche_2C mm 
+MSTEP:Step42  N__141 N__149 Subst="MSub1" W1=W_adapt_1_parche_1C2 mm W2=W_adapt_1_parche_2C2 mm 
+MSTEP:Step43  N__135 N__139 Subst="MSub1" W1=W_adapt_1C mm W2=W_adapt_2C mm 
+MTEE_ADS:Tee7  N__48 N__142 N__134 Subst="MSub1" W1=W_Z1 mm W2=W_Z1 mm W3=W_adapt_1 mm 
+Port:TermG25  N__150 0 Num=23 Z=Z_parche Ohm Noise=yes 
+Port:TermG26  N__133 0 Num=24 Z=Z_parche Ohm Noise=yes 
+Port:TermG27  N__152 0 Num=25 Z=Z2 Ohm Noise=yes 
+
+M_1=0.5 tune{ 0.25 to 0.75 by 0.01 }
+
+M_2=0.5 tune{ 0.25 to 0.75 by 0.01 }
+
+M_6=0.5 tune{ 0.25 to 0.75 by 0.01 }
+
+M_3=0.5 tune{ 0.25 to 0.75 by 0.01 }
+
+M_4=0.5 tune{ 0.25 to 0.75 by 0.01 }
+
+M_5=0.5 tune{ 0.25 to 0.75 by 0.01 }

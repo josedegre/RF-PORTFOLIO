@@ -1,0 +1,6 @@
+With MeshSettings
+     With .ItemMeshSettings ("solid$component1:Parches_superior")
+          .SetMeshType "All" 
+          .Set "Transform", "6.12323e-17", "-1", "0", "1", "6.12323e-17", "0", "0", "0", "1" 
+     End With
+End With

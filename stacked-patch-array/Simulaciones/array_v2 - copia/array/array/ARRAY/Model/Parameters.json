@@ -1,0 +1,65 @@
+{
+    "parameters": [
+        {
+            "expr": "18.80*1.15",
+            "name": "W_parche_inf",
+            "value": "21.62"
+        },
+        {
+            "expr": "15.28",
+            "name": "L_parche_inf",
+            "value": "15.28"
+        },
+        {
+            "expr": "1.58",
+            "name": "h_sus",
+            "value": "1.58"
+        },
+        {
+            "expr": "0.035",
+            "name": "h_cobre",
+            "value": "0.035"
+        },
+        {
+            "expr": "19.1*0.9",
+            "name": "Long_linea",
+            "value": "17.19"
+        },
+        {
+            "expr": "5.1*0.85",
+            "name": "h_0",
+            "value": "4.335"
+        },
+        {
+            "expr": "14*1.07",
+            "name": "L_parche_sup",
+            "value": "14.98"
+        },
+        {
+            "expr": "18.8*1.15",
+            "name": "W_parche_sup",
+            "value": "21.62"
+        },
+        {
+            "expr": "1.5",
+            "name": "W_linea",
+            "value": "1.5"
+        },
+        {
+            "expr": "3*10^(8)/(4.7*10^(9))*10^3",
+            "name": "lambda_0",
+            "value": "63.8297872340425"
+        },
+        {
+            "expr": "0.7*lambda_0",
+            "name": "distancia_entre_parches",
+            "value": "44.6808510638297"
+        },
+        {
+            "expr": "-2*pi*distancia_entre_parches/lambda_0*sin(5*pi/180)*180/pi",
+            "name": "alpha",
+            "value": "-21.9632471724098"
+        }
+    ],
+    "version": 1
+}

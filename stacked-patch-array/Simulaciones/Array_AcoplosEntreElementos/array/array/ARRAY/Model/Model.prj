@@ -1,0 +1,13 @@
+{
+   "Author": "eps",
+   "Comment": "",
+   "Last Problem Type": "High Frequency",
+   "Last Solver Type": "HF Time Domain",
+   "Last Solver Type Abb": "t",
+   "Mesh Cells": "302,400",
+   "Mesh Type": "Hexahedral",
+   "Modeler Unique ID": "5:array.cst?87267bc1d21114eff2e5aa34823aae4d?31420:numberofparameters=12:port=1>mode=1>zre=40>zim=0?port=2>mode=1>zre=40>zim=0?port=3>mode=1>zre=40>zim=0?port=4>mode=1>zre=40>zim=0:::l_parche_inf?l_parche_sup?long_linea?w_linea?w_parche_inf?w_parche_sup?alpha?distancia_entre_parches?h_0?h_cobre?h_sus?lambda_0",
+   "ProjectVersion": "'# MWS Version: Version 2024.0 - Sep 01 2023 - ACIS 33.0.1 -",
+   "Results": "Time Domain: S-Parameter",
+   "Version": "3"
+}

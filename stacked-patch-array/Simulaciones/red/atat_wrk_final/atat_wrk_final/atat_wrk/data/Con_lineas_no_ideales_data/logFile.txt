@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Tue Oct 14 20:53:35 2025
+      Running on host: "w10CSTantigona-05"
+      In Directory: "C:\Users\eps\Downloads\atat_wrk (1)\atat_wrk\data"
+      Process ID: 988
+
+
+SP SP1[1] <atat_lib:Con lineas no ideales:schematic>   freq=(4.2 GHz->5.2 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     1.47 seconds.
+

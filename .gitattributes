@@ -1,0 +1,2 @@
+stacked-patch-array/Simulaciones/fase[[:space:]]2/parche_binomial.zip filter=lfs diff=lfs merge=lfs -text
+stacked-patch-array/Simulaciones/fase[[:space:]]2/parche_uniforme.zip filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,12 @@
+With MeshSettings
+     With .ItemMeshSettings ("solid$Array:parches_sup")
+          .SetMeshType "All" 
+          .Set "Transform", "6.12323e-17", "-1", "0", "1", "6.12323e-17", "0", "0", "0", "1" 
+     End With
+End With
+With MeshSettings
+     With .ItemMeshSettings ("solid$cond:import_1")
+          .SetMeshType "All" 
+          .Set "Transform", "6.12323e-17", "1", "0", "-1", "6.12323e-17", "0", "0", "0", "1" 
+     End With
+End With

@@ -1,0 +1,65 @@
+{
+    "parameters": [
+        {
+            "expr": "18.80*1.15",
+            "name": "W_parche_inf",
+            "value": "21.62"
+        },
+        {
+            "expr": "15.28*01",
+            "name": "L_parche_inf",
+            "value": "15.28"
+        },
+        {
+            "expr": "1.58",
+            "name": "h_sus",
+            "value": "1.58"
+        },
+        {
+            "expr": "0.035",
+            "name": "h_cobre",
+            "value": "0.035"
+        },
+        {
+            "expr": "19.1*0.9",
+            "name": "Long_linea",
+            "value": "17.19"
+        },
+        {
+            "expr": "5.1*0.85",
+            "name": "h_0",
+            "value": "4.335"
+        },
+        {
+            "expr": "14*1.07",
+            "name": "L_parche_sup",
+            "value": "14.98"
+        },
+        {
+            "expr": "18.8*1.15",
+            "name": "W_parche_sup",
+            "value": "21.62"
+        },
+        {
+            "expr": "1.5",
+            "name": "W_linea",
+            "value": "1.5"
+        },
+        {
+            "expr": "3e8/4.7e9",
+            "name": "lambda_0",
+            "value": "6.38297872340425e-02"
+        },
+        {
+            "expr": "0.5*lambda_0",
+            "name": "d",
+            "value": "3.19148936170213e-02"
+        },
+        {
+            "expr": "-2*pi*d/lambda_0*sin(5*pi/180)",
+            "name": "shift",
+            "value": "-0.273807841134205"
+        }
+    ],
+    "version": 1
+}
