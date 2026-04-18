@@ -1,0 +1,11 @@
+(nil
+    spare_node_list(1)
+       (
+            "X2.SLC2._NET1"
+        )
+    spare_inst_list(2)
+       (
+            "X2.SLC2.c1"
+            "X2.SLC2.l1"
+        )
+)

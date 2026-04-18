@@ -1,0 +1,22 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Sat Nov 22 13:17:21 2025
+      Running on host: "DESKTOP-F9C4HC5"
+      In Directory: "G:\Mi unidad\CAFR_Ej3\data"
+      Process ID: 22832
+
+
+SP SP1[1] <CAFR_Ej3_lib:Amplificador_bilateral_con_redes:schematic>   freq=(1 GHz->3 GHz)
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    Data in the Touchstone file `G:/Mi unidad/mgf4921am_2a6GHz_10mA.s2p'
+    does not cover the requested value of `freq'.
+    Therefore, the required data was obtained by extrapolation.
+
+
+
+Resource usage:
+  Total stopwatch time     =     2.44 seconds.
+

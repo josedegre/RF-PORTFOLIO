@@ -1,0 +1,5 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+DEFINE CAFR_Ej3_lib CAFR_Ej3_lib
+ASSIGN CAFR_Ej3_lib libMode shared
+INCLUDE ../AMPLI_wrk/lib.defs
+INCLUDE MGF4921AM_pkg_amp_ver130c/lib.defs

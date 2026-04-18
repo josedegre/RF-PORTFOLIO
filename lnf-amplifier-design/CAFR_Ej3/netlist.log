@@ -1,0 +1,31 @@
+; Top Design: "CAFR_Ej3_lib:Amplificador_no_lineal:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="CAFR_Ej3_lib:Amplificador_no_lineal:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Short:DC_Feed1  N__4 N__1 Mode=-1 
+Short:DC_Feed2  N__6 N__0 Mode=-1 
+Short:DC_Block1  N__8 N__1 Mode=1 
+Short:DC_Block2  N__0 N__9 Mode=1 
+V_Source:SRC2  N__6 0 Type="V_DC" Vdc=Vds V SaveCurrent=1 
+
+Vgs=3
+Vds=2
+Port:TermG1  N__8 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  N__9 0 Num=2 Z=50 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=2 GHz Stop=2 GHz Step=1.0 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+V_Source:SRC1  0 N__4 Type="V_DC" Vdc=Vgs V SaveCurrent=1 
+#uselib "MGF4921AM_pkg_amp_ver130" , "main_v130_MGF4921AM_pkg_amp_ver130"
+"main_v130_MGF4921AM_pkg_amp_ver130":X2  N__0 0 N__1 

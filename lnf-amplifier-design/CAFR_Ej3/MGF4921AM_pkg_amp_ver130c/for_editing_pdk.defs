@@ -1,0 +1,6 @@
+# Library Defs for editing the MGF4921AM_pkg_amp_ver130 design kit
+# Remove this from the design kit before distributing to customers.
+DEFINE MGF4921AM_pkg_amp_ver130_tech ./MGF4921AM_pkg_amp_ver130_tech
+ASSIGN MGF4921AM_pkg_amp_ver130_tech libMode shared
+DEFINE MGF4921AM_pkg_amp_ver130 ./MGF4921AM_pkg_amp_ver130
+ASSIGN MGF4921AM_pkg_amp_ver130 libMode shared

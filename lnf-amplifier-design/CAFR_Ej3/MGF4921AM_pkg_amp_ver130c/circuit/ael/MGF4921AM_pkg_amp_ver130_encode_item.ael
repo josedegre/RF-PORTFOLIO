@@ -1,0 +1,38 @@
+set_simulator_type(1);
+set_design_type(1);
+create_item("main_v130_MGF4921AM_pkg_amp_ver130",		//Name
+		"main_v130 - encoded",		//Label
+		"X",		//Prefix
+		ITEM_NOT_ALL_PARM,		//Attribute
+		-1,		//Priority
+		"",		//iconName
+		"Component Parameters",		//dialogName
+		"",		//dialogData
+		"#uselib \"MGF4921AM_pkg_amp_ver130\" , \"%d\"\n\"%d\":%t %# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%e%e",		//netlistFormat
+		"main_v130_MGF4921AM_pkg_amp_ver130",		//netlistData
+		ComponentAnnotFmt,		//displayFormat
+		"SYM_3Port",		//symbolName
+		0,		//artWorkType
+		NULL,		//artworkData
+		ITEM_PRIMITIVE_EX		//extraAttrib
+);
+
+set_simulator_type(1);
+set_design_type(1);
+create_item("sub_v130_MGF4921AM_pkg_amp_ver130",		//Name
+		"sub_v130 - encoded",		//Label
+		"X",		//Prefix
+		ITEM_NOT_ALL_PARM,		//Attribute
+		-1,		//Priority
+		"",		//iconName
+		"Component Parameters",		//dialogName
+		"",		//dialogData
+		"#uselib \"MGF4921AM_pkg_amp_ver130\" , \"%d\"\n\"%d\":%t %# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%e%e",		//netlistFormat
+		"sub_v130_MGF4921AM_pkg_amp_ver130",		//netlistData
+		ComponentAnnotFmt,		//displayFormat
+		"SYM_HP_FET",		//symbolName
+		0,		//artWorkType
+		NULL,		//artworkData
+		ITEM_PRIMITIVE_EX		//extraAttrib
+);
+

@@ -1,0 +1,5 @@
+Name: MGF4921AM_pkg_amp_ver130
+Version: 1.30
+Date: Wed Feb 15 01:02:54 2012
+Description: MGF4921AM_pkg_amp_ver130
+Revision: Initial revision

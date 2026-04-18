@@ -1,0 +1,12 @@
+1     7.705    0 0
+10    1    "SYM_main_v130_MGF4921AM_pkg_amp_ver130"    2    1329235372    0    47    341    0
+20    0    ""    0 0 0 0 0    2 -3 1    1329235372    0    "um_schematic.prf" "schematic.lay"
+90    "VIEW_LAYER_NUMBER"  1  1 0 `4`
+40    4    0    0    0
+44    0    0    0    0    0    0    0
+21
+20    1    ""    0 0 0 0 0    3 -3 1    0    0    "um_layout.prf" "layout.lay"
+90    "FRQPLN0"  3  1 0 `10 1 1 0 GHz GHz GHz`
+90    "AFS_STATE"  3  1 0 `0 25 1 0 0.000000 0.000000 GHz GHz uninit 0 ./localhost 0 Presentation1 1 0`
+44    0    0    0    0    0    0    0
+21

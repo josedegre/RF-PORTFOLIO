@@ -1,0 +1,31 @@
+// Design Kit Component Conversion Script
+
+de_new_library("MGF4921AM_pkg_amp_ver130", "C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130");
+
+de_add_library_to_def_file("MGF4921AM_pkg_amp_ver130", "./MGF4921AM_pkg_amp_ver130", READ_ONLY_LIB_MODE, "C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/lib.defs");
+de_add_library_to_def_file("MGF4921AM_pkg_amp_ver130", "./MGF4921AM_pkg_amp_ver130", SHARED_LIB_MODE, "C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/for_editing_pdk.defs");
+
+// Create and populate configuration file
+de_create_library_config_file("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "DESIGN_KIT_NAME", "MGF4921AM_pkg_amp_ver130");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "DESIGN_KIT_ROOT", "../");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "BOOT_AEL", "../de/ael/boot");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "VERSION", "1.30");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "ADSLIBCONFIG_DIRECTORY", "../circuit/config");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "BIN_DIRECTORY", "..//bin/$SIMARCH$COMPILER_VER");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "DOC_DIRECTORY", "../doc");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "DRC_DIRECTORY", "../drc/rules");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "EXPRESSIONS_DIRECTORY", "../expressions/ael");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "TEMPLATES_DIRECTORY", "../circuit/templates/library");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "DDS_TEMPLATES_DIRECTORY", "../circuit/templates");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "NETLIST_EXPORTER_DIRECTORY", "../netlist_exp");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "VERILOGA_DIRECTORY", "../veriloga");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "INPUT_DATA_PATH", "../circuit/data;../circuit/models");
+de_set_library_config_file_var("C:/users/default/ADS2011_10_model_translate/MGF4921AM_pkg_amp_ver130_converted/MGF4921AM_pkg_amp_ver130", "LIB_BROWSER_CTL", "../circuit/records/MGF4921AM_pkg_amp_ver130.ctl");
+// Convert library components
+convert_item_to_oa("main_v130_MGF4921AM_pkg_amp_ver130", "MGF4921AM_pkg_amp_ver130", "main_v130_MGF4921AM_pkg_amp_ver130", FALSE, TRUE, "MGF4921AM_pkg_amp_ver130");
+convert_item_to_oa("sub_v130_MGF4921AM_pkg_amp_ver130", "MGF4921AM_pkg_amp_ver130", "sub_v130_MGF4921AM_pkg_amp_ver130", FALSE, TRUE, "MGF4921AM_pkg_amp_ver130");
+convert_item_to_oa("SYM_main_v130_MGF4921AM_pkg_amp_ver130", "MGF4921AM_pkg_amp_ver130", "SYM_main_v130_MGF4921AM_pkg_amp_ver130", FALSE, TRUE, "MGF4921AM_pkg_amp_ver130");
+convert_item_to_oa("SYM_sub_v130_MGF4921AM_pkg_amp_ver130", "MGF4921AM_pkg_amp_ver130", "SYM_sub_v130_MGF4921AM_pkg_amp_ver130", FALSE, TRUE, "MGF4921AM_pkg_amp_ver130");
+
+de_close_all_libraries_and_lib_def_files();

@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Fri Nov 21 18:46:13 2025
+      Running on host: "DESKTOP-F9C4HC5"
+      In Directory: "G:\Mi unidad\CAFR_Ej3\data"
+      Process ID: 15708
+
+
+SP SP1[1] <CAFR_Ej3_lib:Amplificador_unilateral:schematic>   freq=2 GHz
+
+
+Resource usage:
+  Total stopwatch time     =     1.69 seconds.
+

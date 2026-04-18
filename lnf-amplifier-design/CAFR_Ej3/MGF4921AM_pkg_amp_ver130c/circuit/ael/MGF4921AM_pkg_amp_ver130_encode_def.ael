@@ -1,0 +1,22 @@
+decl dir_delim = "/";
+decl MGF4921AM_pkg_amp_ver130_bitmap_path =
+        strcat(MGF4921AM_pkg_amp_ver130_PATH, dir_delim,
+        "circuit", dir_delim, 
+        "bitmaps", dir_delim, 
+        on_PC?"pc":"unix", dir_delim);
+
+de_define_palette_group( SCHEM_WIN, "analogRF_net",
+        "MGF4921AM_pkg_amp_ver130", "MGF4921AM_pkg_amp_ver130", -2,
+        "main_v130_MGF4921AM_pkg_amp_ver130", "Encoded Version of Part - main_v130",
+                strcat( MGF4921AM_pkg_amp_ver130_bitmap_path, "main_v130"),
+        "sub_v130_MGF4921AM_pkg_amp_ver130", "Encoded Version of Part - sub_v130",
+                strcat( MGF4921AM_pkg_amp_ver130_bitmap_path, "sub_v130")
+        );
+de_define_palette_group( SCHEM_WIN, "sigproc_net",
+        "MGF4921AM_pkg_amp_ver130", "MGF4921AM_pkg_amp_ver130", -2,
+         "main_v130_MGF4921AM_pkg_amp_ver130", "Encoded Version of Part - main_v130", 
+                strcat( MGF4921AM_pkg_amp_ver130_bitmap_path, "main_v130"),
+         "sub_v130_MGF4921AM_pkg_amp_ver130", "Encoded Version of Part - sub_v130", 
+                strcat( MGF4921AM_pkg_amp_ver130_bitmap_path, "sub_v130")
+        );
+

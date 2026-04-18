@@ -1,0 +1,24 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Sat Nov 22 13:47:30 2025
+      Running on host: "DESKTOP-F9C4HC5"
+      In Directory: "G:\Mi unidad\CAFR_Ej3\data"
+      Process ID: 17988
+
+
+1 spare nodes and 2 spare devices are removed.
+The details can be found in file 'G:\Mi unidad\CAFR_Ej3\data\Amplificador_no_lineal_data\spare_removal.txt'.
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with no DC path to ground (topology corrected): 1
+
+
+SP SP1[1] <CAFR_Ej3_lib:Amplificador_no_lineal:schematic>   freq=2 GHz
+
+
+Resource usage:
+  Total stopwatch time     =     1.64 seconds.
+
