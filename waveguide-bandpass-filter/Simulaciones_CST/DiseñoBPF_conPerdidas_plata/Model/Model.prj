@@ -1,0 +1,13 @@
+{
+   "Author": "degre",
+   "Comment": "",
+   "Last Problem Type": "High Frequency",
+   "Last Solver Type": "HF Frequency Domain",
+   "Last Solver Type Abb": "f",
+   "Mesh Cells": "69,554",
+   "Mesh Type": "Tetrahedral",
+   "Modeler Unique ID": "5:diseñobpf_conperdidas_plata.cst?94839a65853141ad48beae37a7ffdd6f?31897:numberofparameters=9:port=1>mode=1>zre=0>zim=0?port=2>mode=1>zre=0>zim=0:::l?lc1?lc2?a?b?t?w1?w2?w3",
+   "ProjectVersion": "'# MWS Version: Version 2024.0 - Sep 01 2023 - ACIS 33.0.1 -",
+   "Results": "Frequency Domain: S-Parameter",
+   "Version": "3"
+}

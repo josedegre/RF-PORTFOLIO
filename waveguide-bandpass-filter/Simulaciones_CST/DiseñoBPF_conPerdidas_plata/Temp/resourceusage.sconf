@@ -1,0 +1,15 @@
+FeatureKeywords:string:modeler:history:header_not_parsed, modeler:model:anchorpoints, modeler:construction_info:object_names, modeler:load:fullloading, meshloading:problem_class_only, la:macromodel, la:macromodel:nmaxthreads:6, block:type:saved:MWSSCHEM, DELETERESULTS:M0P0, mesh::background::boolean, mesh:workflow:nru, mesh:workflow:srf2vol, mesh:workflow:boolean, mesh:workflow:boolean:advanced, mesh:workflow:cad2srf, mesh:workflow:cadsurf, acceleration:cpu:6, acceleration:cpudevices:1, solver:hf:fd:task:1, monitor:resultfilemap:load, monitor:scaling:peak, mesh:tet:adaptive:anisotropicedge, source:waveguide port:lossy:si, la:precond:pdss7, DenseInitDangerousDim, monitor:resultfilemap:save, solver:hf:fd:meshenhancement, la:iterative, la:parallel_excitation:block, mesh:tet:adaptive:fsample:recalc, solver:hf:fd:samples:18, solver:hf:fd:sampling:linear, background:normal, boundary:expanded open:xmax, boundary:expanded open:xmin, boundary:expanded open:ymax, boundary:expanded open:ymin, boundary:expanded open:zmax, boundary:expanded open:zmin, boundary:open:ConvPML, lineqssolver:setting:acceleratedrestart, material:SI:generalized model, material:SI:lossy metal, material:rho, mesh:tet, mesh:tet:autocurvature, mesh:tet:curved, mesh:tet:curved:3, monitor:power:1d, solver:hf:fd, solver:hf:fd:generalpurpose:tet, solver:hf:fd:order:2, solver:hf:fd:portloss, source:waveguide port:active, source:waveguide port:inhomogeneous, source:waveguide port:internal port, units:Capacitance:pF, units:Conductance:S, units:Current:A, units:Frequency:GHz, units:Inductance:nH, units:Length:mm, units:Resistance:Ohm, units:Temperature:degC, units:Time:ns, units:Voltage:V, solver:pp:sparameter:sensitivityanalysis, solver:pp:sparameter:basicbranch, solver:pp:sparameter:unnorm, solver:pp:sparameter:updatebalance, SMatrix:NCutoffs, SMatrix:NCutoffsDiffer, modeler:model:anchorpoints:saving, modeler:hidfile:unique_ids, modeler:hidfile:diagnostics, lineqssolver:setting:auto, lineqssolver:setting:treecotree, mesh:tet:adaptive, meshline:hex:check_after_loading:default, meshline:hex:handling_legacy:no, acisinterface:removebboxcache:modeler:applytransform, modeler:model:anchorpoints:loading, modeler:load:fastloading, postprocess:touchstone, DELETERESULTS:000A, monitor:3D:freq, monitor:e-field, monitor:h-field, monitor:surface current density, postprocess:loss and Q, front:femesh3dreader:readbc3file, meshloading:tet_complete, PP:COVERAGE:CFEMesh3D::LoadFieldData
+LastWorkflowState:string:tetmesh:success
+solver_hf_tet_fd/InitialFreePhysicalInMB:int:4267
+solver_hf_tet_fd/MaxResidentSizeInMB:int:1187
+solver_hf_tet_fd/MaxResidentSizeMiB:int:1110
+solver_hf_tet_fd/MinFreePhysicalInMB:int:3096
+solver_pp/InitialFreePhysicalInMB:int:4346
+solver_pp/MaxResidentSizeInMB:int:26
+solver_pp/MaxResidentSizeMiB:int:7
+solver_pp/MinFreePhysicalInMB:int:4336
+tetmesh/InitialFreePhysicalInMB:int:6634
+tetmesh/MaxResidentSizeInMB:int:49
+tetmesh/MaxResidentSizeMiB:int:26
+tetmesh/MinFreePhysicalInMB:int:6530
+---

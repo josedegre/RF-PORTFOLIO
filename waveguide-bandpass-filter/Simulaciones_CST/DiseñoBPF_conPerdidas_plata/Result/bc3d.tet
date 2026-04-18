@@ -1,0 +1,210 @@
+// Number 3D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+3
+
+// Obj3D_ID, MediaCode (0=Iso3D,1=LossyIso3D,2=PEC,3=Aniso3D,4=LossyAniso3D,5=SurfaceImp)
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+>> Material name:
+Vacuum
+
+1 0
+>> Material name:
+air_0
+
+2 5
+>> Material name:
+Silver
+
+// Number 2D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+63
+
+// Obj2D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=RHO,4=OHM,5=PORT,6=OPEN,7=EXPANDEDOPEN,8=PERIODIC,9=TANGENTIAL,10=NORMAL):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+
+1 5
+1
+
+2 5
+2
+
+3 7
+
+4 7
+
+5 7
+
+6 7
+
+7 7
+
+8 7
+
+9 0
+
+10 0
+
+11 0
+
+12 0
+
+13 3
+Silver
+
+14 3
+Silver
+
+15 3
+Silver
+
+16 3
+Silver
+
+17 3
+Silver
+
+18 3
+Silver
+
+19 3
+Silver
+
+20 3
+Silver
+
+21 3
+Silver
+
+22 3
+Silver
+
+23 3
+Silver
+
+24 3
+Silver
+
+25 3
+Silver
+
+26 3
+Silver
+
+27 3
+Silver
+
+28 3
+Silver
+
+29 3
+Silver
+
+30 3
+Silver
+
+31 3
+Silver
+
+32 3
+Silver
+
+33 3
+Silver
+
+34 3
+Silver
+
+35 3
+Silver
+
+36 3
+Silver
+
+37 3
+Silver
+
+38 3
+Silver
+
+39 3
+Silver
+
+40 3
+Silver
+
+41 3
+Silver
+
+42 3
+Silver
+
+43 3
+Silver
+
+44 3
+Silver
+
+45 3
+Silver
+
+46 3
+Silver
+
+47 3
+Silver
+
+48 3
+Silver
+
+49 3
+Silver
+
+50 3
+Silver
+
+51 3
+Silver
+
+52 3
+Silver
+
+53 3
+Silver
+
+54 3
+Silver
+
+55 3
+Silver
+
+56 3
+Silver
+
+57 3
+Silver
+
+58 3
+Silver
+
+59 3
+Silver
+
+60 3
+Silver
+
+61 3
+Silver
+
+62 3
+Silver
+
+// Number 1D OBJECTS:
+// ^^^^^^^^^^^^^^^^^^
+1
+
+// Obj1D_ID, BCCode (0=Reg,1=PEC,2=PMC,3=PORT,4=Lumped):
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+0 0
+

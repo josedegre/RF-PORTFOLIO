@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaGeometryFile version="20200202" creator="TetMesher">
+  <Components>
+    <Shape name="Components\component1:cavidad1" id="0" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="307 309 311 312 313 314 315 316"/>
+        <Neg list="308 310"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="317"/>
+    </Shape>
+    <Shape name="Components\component1:cavidad2" id="1" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="297 299 301 302 303 304 305 306"/>
+        <Neg list="298 300"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="318"/>
+    </Shape>
+    <Shape name="Components\component1:cavidad2_1" id="2" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="287 289 291 292 293 294 295 296"/>
+        <Neg list="288 290"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="319"/>
+    </Shape>
+    <Shape name="Components\component1:cavidad1_1" id="3" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="277 279 281 282 283 284 285 286"/>
+        <Neg list="278 280"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="320"/>
+    </Shape>
+    <Shape name="Components\component1:iris2_1" id="4" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="273 274 275 276 280 290"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="321"/>
+    </Shape>
+    <Shape name="Components\component1:entrada_1" id="5" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="265 267 268 269 270 271 272"/>
+        <Neg list="266"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="322"/>
+    </Shape>
+    <Shape name="Components\component1:iris1_1" id="6" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="261 262 263 264 266 278"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="323"/>
+    </Shape>
+    <Shape name="Components\component1:iris3" id="7" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="257 258 259 260 288 300"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="324"/>
+    </Shape>
+    <Shape name="Components\component1:iris2" id="8" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="253 254 255 256 298 310"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="325"/>
+    </Shape>
+    <Shape name="Components\component1:entrada" id="9" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="245 247 248 249 250 251 252"/>
+        <Neg list="246"/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="326"/>
+    </Shape>
+    <Shape name="Components\component1:iris1" id="10" visible="1" material="Vacuum" line_material="">
+      <MeshGroup0D list=""/>
+      <MeshGroup1D list=""/>
+      <MeshGroup2D>
+        <Pos list="241 242 243 244 246 308"/>
+        <Neg list=""/>
+        <DS list=""/>
+      </MeshGroup2D>
+      <MeshGroup3D list="327"/>
+    </Shape>
+  </Components>
+  <Materials>
+    <Material name="PEC" priority="1">
+      <Drawstyle color="0.800000012 0.800000012 0.800000012" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="Vacuum" priority="1">
+      <Drawstyle color="0.5 0.800000012 1" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="air_0" priority="1">
+      <Drawstyle color="0.600000024 0.600000024 0.600000024" transparency="0" linestrength="1"/>
+    </Material>
+    <Material name="$NFSMaterial$" priority="1">
+      <Drawstyle color="0 1 1" transparency="0" linestrength="1"/>
+    </Material>
+  </Materials>
+  <Groups/>
+  <SimulationDomain min="-9.52499962 0 -7.49481153" max="9.52499962 9.52499962 135.929291"/>
+  <MeshType type="TETRAHEDRAL"/>
+  <HexMesh>
+    <Dimensions nx="8" ny="6" nz="36"/>
+    <MeshPlanesX values="-9.5249996185302734 -6.8035711560930494 -4.0821426936558245 -1.3607142312186022 1.3607142312186231 4.0821426936558627 6.8035711560930983 9.5249996185302734"/>
+    <MeshPlanesY values="0 1.904999923706056 3.809999847412112 5.7149997711181637 7.6199996948242168 9.5249996185302734"/>
+    <MeshPlanesZ values="-7.4948115348815918 -3.3969800404139749 0.70085145405364391 4.7986829485212548 8.8965144429888685 12.994345937456497 17.092177431924124 21.190008926391755 25.287840420859382 29.38567191532697 33.483503409794565 37.581334904262164 41.679166398729748 45.776997893197347 49.874829387664938 53.97266088213253 58.070492376600122 62.168323871067791 66.266155365535454 70.363986860003124 74.461818354470793 78.559649848938463 82.657481343406133 86.755312837873802 90.853144332341458 94.950975826809128 99.048807321276783 103.14663881574445 107.24447031021212 111.34230180467979 115.44013329914745 119.53796479361512 123.63579628808279 127.7336277825503 131.83145927701784 135.92929077148438"/>
+  </HexMesh>
+  <UnitCell/>
+  <GeometryFile filename="3d.slim" type="slim" scale_factor_to_meter="0.001" subdomain_id=""/>
+</MetaGeometryFile>
