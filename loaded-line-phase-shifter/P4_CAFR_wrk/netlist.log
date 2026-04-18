@@ -1,0 +1,67 @@
+; Top Design: "P4_CAFR_lib:DOS_DIODOS_INTEGRADOS:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="P4_CAFR_lib:DOS_DIODOS_INTEGRADOS:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=1.3 GHz Stop=3.3 GHz Step=0.001 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+TLIN:TL10  N__10 N__18 Z=Z_linea Ohm E=E_linea F=f GHz 
+TLIN:TL11  N__18 N__15 Z=Z_linea Ohm E=E_linea F=f GHz 
+TLIN:TL12  N__10 N__9 Z=Z_linea Ohm E=E_linea F=f GHz 
+L:L6  N__22 N__0 L=L_L nH Noise=yes  
+C:C13  N__8 N__22 C=C_P pF 
+C:C12  N__1 N__20 C=C_P pF 
+C:C11  N__6 N__22 C=C pF 
+C:C10  N__4 N__20 C=C pF 
+C:C14  N__20 N__22 C=C_C pF 
+C:C3  N__1 N__8 C=C_C pF 
+L:L5  N__20 N__5 L=L_L nH Noise=yes  
+L:L4  N__7 N__8 L=L_B nH Noise=yes  
+L:L1  N__9 N__1 L=L_L nH Noise=yes  
+L:L2  N__15 N__8 L=L_L nH Noise=yes  
+L:L3  N__1 N__3 L=L_B nH Noise=yes  
+R:R15  N__7 N__6 R=R Ohm Noise=yes 
+R:R14  N__6 N__22 R=R2 Ohm Noise=yes 
+R:R12  N__3 N__4 R=R Ohm Noise=yes 
+R:R13  N__4 N__20 R=R2 Ohm Noise=yes 
+Port:TermG7  N__10 0 Num=1 Z=Z_0 Ohm Noise=yes 
+Port:TermG8  N__18 0 Num=2 Z=Z_0 Ohm Noise=yes 
+
+C=0.12
+
+R=1.5
+
+Z_0=50
+
+f=2.3
+
+Z_stub=197.6575379602501
+
+Z_linea=47.132074554608920
+
+E_linea=90
+
+E_stub=35.8164
+
+L_B=1.0
+
+C_P=0.08
+
+C_C=0.06
+
+C_L=1.0
+
+R2=47773
+
+L_L=0.5

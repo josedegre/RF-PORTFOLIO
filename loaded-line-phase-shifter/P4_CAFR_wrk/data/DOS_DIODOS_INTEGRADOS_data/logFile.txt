@@ -1,0 +1,21 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Wed Dec 10 23:51:16 2025
+      Running on host: "w10CSTantigona-05"
+      In Directory: "C:\Users\eps\Desktop\P4_CAFR_wrk\data"
+      Process ID: 2088
+
+
+2 spare nodes and 2 spare devices are removed.
+The details can be found in file 'C:\Users\eps\Desktop\P4_CAFR_wrk\data\DOS_DIODOS_INTEGRADOS_data\spare_removal.txt'.
+
+
+SP SP1[1] <P4_CAFR_lib:DOS_DIODOS_INTEGRADOS:schematic>   freq=(1.3 GHz->3.3 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     1.50 seconds.
+
