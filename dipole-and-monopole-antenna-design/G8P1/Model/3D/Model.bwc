@@ -1,0 +1,21 @@
+3100 0 2 0           
+13 CST_HEXMESHER 14 ACIS 31.0.1 NT 24 Thu Sep 21 12:30:42 2023 
+1 9.9999999999999995e-07 1e-10 
+T @77 _SGP26SJ_A74PH7H_CC3P_CTH8_V6H6AD8RUPPPH7AS3F276Y8AVS8P3F8JVS86C3BTUS8Q53CMKF 
+edge $2 -1 -1 $-1 $3 1 $3 0 $-1 $4 forward @7 unknown F #
+edge $5 -1 -1 $-1 $6 1 $6 0 $-1 $7 forward @7 unknown F #
+name_attrib-gen-attrib $-1 -1 $8 $-1 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @26 ncomponent1:brazo_dipolo_2 #
+vertex $-1 -1 -1 $-1 $0 $9 #
+ellipse-curve $-1 -1 -1 $-1 0 0 -0.5 0 0 1 1.2 0 0 1 I I #
+name_attrib-gen-attrib $-1 -1 $10 $-1 $1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @26 ncomponent1:brazo_dipolo_1 #
+vertex $-1 -1 -1 $-1 $1 $11 #
+ellipse-curve $-1 -1 -1 $-1 0 0 0.5 0 0 -1 1.2 0 0 1 I I #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $12 $2 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @17 backwd_pickNumber 1 #
+point $-1 -1 -1 $-1 1.2 0 -0.5 #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $13 $5 $1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @17 backwd_pickNumber 1 #
+point $-1 -1 -1 $-1 1.2 0 0.5 #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $14 $8 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @18 backwd_blockNumber 5 #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $15 $10 $1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @18 backwd_blockNumber 6 #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $12 $0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @9 backwd_id 2 #
+integer_attrib-name_attrib-gen-attrib $-1 -1 $-1 $13 $1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 @9 backwd_id 1 #
+End-of-ACIS-data 

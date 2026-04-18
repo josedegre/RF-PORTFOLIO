@@ -1,0 +1,30 @@
+{
+    "parameters": [
+        {
+            "expr": "0.4515*lambda",
+            "name": "L",
+            "value": "54.18"
+        },
+        {
+            "expr": "120",
+            "name": "lambda",
+            "value": "120"
+        },
+        {
+            "expr": "1",
+            "name": "G",
+            "value": "1"
+        },
+        {
+            "expr": "0.02*lambda",
+            "name": "D",
+            "value": "2.4"
+        },
+        {
+            "expr": "73",
+            "name": "Zg",
+            "value": "73"
+        }
+    ],
+    "version": 1
+}
