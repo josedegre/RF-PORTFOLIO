@@ -1,0 +1,22 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Mon Oct 13 17:49:12 2025
+      Running on host: "w10CSTantigona-05"
+      In Directory: "C:\Users\eps\ADS\P2_CAFR_wrk\data"
+      Process ID: 6512
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    The positive terminal of port `PORT3' is connected to ground.
+        This may cause a 180 degree phase shift in the S parameters
+        associated with this port.
+
+
+SP SP1[1] <P2_CAFR_lib:LINEAS_IDEALES:schematic>   freq=(1.5 GHz->3.5 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =    53.83 seconds.
+

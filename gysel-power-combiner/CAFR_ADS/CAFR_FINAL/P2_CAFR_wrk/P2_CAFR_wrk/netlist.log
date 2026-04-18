@@ -1,0 +1,43 @@
+; Top Design: "P2_CAFR_lib:LINEAS_IDEALES_Bien:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="P2_CAFR_lib:LINEAS_IDEALES_Bien:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Port:TermG5  N__25 0 Num=5 Z=Z03 Ohm Noise=yes 
+Port:TermG4  N__28 0 Num=4 Z=Z03 Ohm Noise=yes 
+Port:TermG3  N__21 0 Num=3 Z=Z02 Ohm Noise=yes 
+Port:TermG2  N__26 0 Num=2 Z=Z02 Ohm Noise=yes 
+TLIN:TL3  N__26 N__28 Z=ZV Ohm E=thetaV F=f0 GHz 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=1.5 GHz Stop=3.5 GHz Lin=2001 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+
+f0=2.5
+
+thetaV=90
+thetaH1=90
+thetaH2=180
+
+ZV=Z0
+ZH1=sqrt(2)*Z0
+ZH2=0.75*Z0
+
+Z0=50
+Z01=Z0
+Z02=Z0
+Z03=Z0
+TLIN:TL5  N__28 N__25 Z=ZH2 Ohm E=thetaH2 F=f0 GHz 
+TLIN:TL4  N__21 N__25 Z=ZV Ohm E=thetaV F=f0 GHz 
+Port:TermG1  N__0 0 Num=1 Z=Z01 Ohm Noise=yes 
+TLIN:TL1  N__26 N__0 Z=ZH1 Ohm E=thetaH1 F=f0 GHz 
+TLIN:TL2  N__21 N__0 Z=ZH1 Ohm E=thetaH1 F=f0 GHz 

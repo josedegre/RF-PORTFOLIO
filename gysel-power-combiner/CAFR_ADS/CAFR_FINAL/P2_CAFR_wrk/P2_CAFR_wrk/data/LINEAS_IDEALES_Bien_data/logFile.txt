@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Sun Oct 26 20:40:57 2025
+      Running on host: "DESKTOP-F9C4HC5"
+      In Directory: "G:\Mi unidad\CAFR\Ej2-GYSEL\CAFR_FINAL\CAFR_FINAL\P2_CAFR_wrk\P2_CAFR_wrk\data"
+      Process ID: 12648
+
+
+SP SP1[1] <P2_CAFR_lib:LINEAS_IDEALES_Bien:schematic>   freq=(1.5 GHz->3.5 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =    60.65 seconds.
+

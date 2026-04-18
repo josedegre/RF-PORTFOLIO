@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Sun Oct 12 09:47:47 2025
+      Running on host: "w10CSTantigona-05"
+      In Directory: "C:\Users\eps\ADS\P2_CAFR_wrk\data"
+      Process ID: 5404
+
+
+SP SP1[1] <P2_CAFR_lib:VERSIÓN_VISTA_ENN_INTERNET:schematic>   freq=(1.5 GHz->3.5 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.97 seconds.
+

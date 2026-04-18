@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 595.shp Oct 31 2023, MINT version 5
+    (64-bit windows built: Tue Oct 31, 2023 22:23:19 +0000)
+
+
+***** Simulation started at Fri Oct 24 11:21:23 2025
+      Running on host: "A407"
+      In Directory: "C:\Users\ATAT\Downloads\P2_CAFR_wrk\P2_CAFR_wrk\data"
+      Process ID: 9868
+
+
+SP SP1[1] <P2_CAFR_lib:LINEAS_NO_IDEALES:schematic>   freq=(1.5 GHz->3.5 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     1.13 seconds.
+
