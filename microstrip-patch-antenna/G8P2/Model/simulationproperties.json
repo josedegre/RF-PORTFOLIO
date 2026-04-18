@@ -1,0 +1,28 @@
+{
+    "active_solver": "HF Time Domain",
+    "frequency": {
+        "maximum": 5.1,
+        "maximum_expr": "5.1",
+        "minimum": 4.6,
+        "minimum_expr": "4.6",
+        "unit": "GHz"
+    },
+    "solver_support": {
+        "HF Time Domain": {
+            "dc_multi_node": true,
+            "gpu": true,
+            "mpi": true,
+            "mpi_gpu": true,
+            "multi_gpu": true,
+            "price model": "Premium",
+            "user acc settings": {
+                "cpu devices": 2,
+                "dc nodes": 0,
+                "gpu devices": 0,
+                "mpi nodes": 0,
+                "threads or phys cores": 1024
+            }
+        }
+    },
+    "version": 2
+}

@@ -1,0 +1,189 @@
+{
+    "Optimizer": {
+        "Goals": [
+            {
+                "Complex Type": "MagdB20",
+                "Goal Name": "Result 1DC",
+                "Goal Norm": "MaxDiff",
+                "Goal active": "True",
+                "Operator": "move min",
+                "Range Type": "Total",
+                "Result List": [
+                    {
+                        "Data Source": "Solver",
+                        "Treepath": "1D Results\\S-Parameters\\S1,1",
+                        "Type": "1D Complex"
+                    }
+                ],
+                "Target": "4.85",
+                "Target Max": "0.0",
+                "Use Slope": "False",
+                "Weight": "1.0"
+            },
+            {
+                "Complex Type": "Imag",
+                "Goal Name": "Result 1DC",
+                "Goal Norm": "MaxDiff",
+                "Goal active": "True",
+                "Operator": "=",
+                "Range From": "4.85",
+                "Range To": "4.85",
+                "Range Type": "Single",
+                "Result List": [
+                    {
+                        "Data Source": "Solver",
+                        "Treepath": "1D Results\\S-Parameters\\S1,1",
+                        "Type": "1D Complex"
+                    }
+                ],
+                "Target": "0.0",
+                "Target Max": "0.0",
+                "Use Slope": "False",
+                "Weight": "1.0"
+            }
+        ],
+        "Parameters": {
+            "Parameter List": [
+                {
+                    "Active": "False",
+                    "Anchors": "5",
+                    "Initial Value": "0.035",
+                    "Max Value": "0.0385",
+                    "Min Value": "0.0315",
+                    "Parameter Name": "e"
+                },
+                {
+                    "Active": "False",
+                    "Anchors": "5",
+                    "Initial Value": "3.505358317",
+                    "Max Value": "3.8559",
+                    "Min Value": "3.1548",
+                    "Parameter Name": "epsilonefe"
+                },
+                {
+                    "Active": "False",
+                    "Anchors": "5",
+                    "Initial Value": "1.58",
+                    "Max Value": "1.738",
+                    "Min Value": "1.422",
+                    "Parameter Name": "h"
+                },
+                {
+                    "Active": "True",
+                    "Anchors": "5",
+                    "Initial Value": "15.404091040348",
+                    "Max Value": "16.567",
+                    "Min Value": "13.555",
+                    "Parameter Name": "L"
+                },
+                {
+                    "Active": "False",
+                    "Anchors": "5",
+                    "Initial Value": "(6000/97)",
+                    "Max Value": "0.1",
+                    "Min Value": "-0.1",
+                    "Parameter Name": "lambda"
+                },
+                {
+                    "Active": "False",
+                    "Anchors": "5",
+                    "Initial Value": "33.03796639",
+                    "Max Value": "36.342",
+                    "Min Value": "29.734",
+                    "Parameter Name": "lambdaparche"
+                },
+                {
+                    "Active": "False",
+                    "Anchors": "5",
+                    "Initial Value": "240.2578583",
+                    "Max Value": "264.284",
+                    "Min Value": "216.232",
+                    "Parameter Name": "r_x0"
+                },
+                {
+                    "Active": "False",
+                    "Anchors": "5",
+                    "Initial Value": "15.46391753",
+                    "Max Value": "17.01",
+                    "Min Value": "13.918",
+                    "Parameter Name": "W"
+                },
+                {
+                    "Active": "False",
+                    "Anchors": "5",
+                    "Initial Value": "1.65",
+                    "Max Value": "1.815",
+                    "Min Value": "1.485",
+                    "Parameter Name": "Wstrip"
+                },
+                {
+                    "Active": "True",
+                    "Anchors": "5",
+                    "Initial Value": "4.2632",
+                    "Max Value": "5.2105",
+                    "Min Value": "4.2632",
+                    "Parameter Name": "x0"
+                }
+            ],
+            "Range Percentage": "10",
+            "Start From Current": "True"
+        },
+        "Settings": {
+            "CMAES Settings": {
+                "Maximal Iterations": 3000,
+                "Seed": 1,
+                "Sigma": "0.2",
+                "Use External Anchor": "True",
+                "Use Maximal Iterations": "True"
+            },
+            "Classic Powell Settings": {
+                "Accuracy": "0.01"
+            },
+            "General Settings": {
+                "Algorithm Type": "Trust Region Framework",
+                "Data Storage Type": "None",
+                "Goal Summary Type": "Sum of all goals",
+                "Move Mesh": "False",
+                "Start Active Solver": "True",
+                "Use Data Of Prev Calculations": "False"
+            },
+            "Genetic Algorithm Settings": {
+                "Generation Size": 32,
+                "Goal Function Level": "0.0",
+                "Initial Distribution": "Latin Hypercube Distribution",
+                "Interpolation": "No Interpolation",
+                "Maximal Iterations": 30,
+                "Mutation Rate": 60,
+                "Seed": 1
+            },
+            "Nelder Mead Simplex Settings": {
+                "Goal Function Level": "0.0",
+                "Initial Distribution": "Noisy Latin Hypercube Distribution",
+                "Maximal Iterations": 250,
+                "Min Simplex Size": "1e-6",
+                "Seed": 1,
+                "Use External Anchor": "True",
+                "Use Maximal Iterations": "False"
+            },
+            "Particle Swarm Settings": {
+                "Generation Size": 30,
+                "Goal Function Level": "0.0",
+                "Initial Distribution": "Latin Hypercube Distribution",
+                "Interpolation": "No Interpolation",
+                "Maximal Iterations": 15,
+                "Seed": 1
+            },
+            "Quasi Newton Settings": {
+                "Refinements": "1"
+            },
+            "Trust Region Settings": {
+                "Domain Accuracy": "0.01",
+                "Finite Differences Delta": "Automatic",
+                "Maximal Iterations": 500,
+                "Sigma": "0.2",
+                "Use Maximal Iterations": "False"
+            }
+        },
+        "Version": 1
+    }
+}
