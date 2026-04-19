@@ -1,2 +1,4 @@
 stacked-patch-array/Simulaciones/fase[[:space:]]2/parche_binomial.zip filter=lfs diff=lfs merge=lfs -text
 stacked-patch-array/Simulaciones/fase[[:space:]]2/parche_uniforme.zip filter=lfs diff=lfs merge=lfs -text
+cassegrain-reflector-potter-horn/BOCINA_ENTERA_MET_RAD_v4.zip filter=lfs diff=lfs merge=lfs -text
+cassegrain-reflector-potter-horn/REFLECTOR_MAS_BOCINA_FINAL_v3.zip filter=lfs diff=lfs merge=lfs -text
