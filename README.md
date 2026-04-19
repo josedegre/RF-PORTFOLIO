@@ -3,7 +3,7 @@
 Collection of RF, microwave and antenna design projects covering simulation, circuit design, and experimental validation.
 
 ## Author
-José María De Greñu  
+José María De Gregorio Estúñiga  
 Telecommunications Engineering – RF & Microwave specialization
 
 ## Overview
